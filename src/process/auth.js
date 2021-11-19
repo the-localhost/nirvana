@@ -16,3 +16,22 @@ const scopes = [
     "user-modify-playback-state",
     "app-remote-control"
 ];
+
+// generating response object from URL hash
+const getResponseObjFromUrl = () => {
+    return window.location.hash.substring(1).split('&').reduce((initial, item) => {
+        let parts = item.split('=');
+        initial[parts[0]] = decodeURIComponent(parts[1]);
+        return initial;
+    }, {})
+};
+
+// login URL - the URL that we access on or end
+const loginUrl = `${authEndPoint}?
+                            client_id=${clientID}&
+                            redirect_uri=${redirectUri}&
+                            scope=${scopes.join("%20")}&
+                            response_type=token&
+                            show_dialog=true`;
+
+export {getResponseObjFromUrl, loginUrl};
