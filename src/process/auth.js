@@ -13,8 +13,7 @@ const scopes = [
     "user-read-recently-played",
     "user-read-playback-state",
     "user-top-read",
-    "user-modify-playback-state",
-    "app-remote-control"
+    "user-modify-playback-state" 
 ];
 
 // generating response object from URL hash
