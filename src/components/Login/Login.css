@@ -1,5 +1,7 @@
 .login {
     display: grid;
+    height: 100vh;
+    background-color: black;
     place-items: center;
 }
 
@@ -7,7 +9,7 @@
     width: 100%;
 }
 
-.login > a {
+.login > a { 
     padding: 20px;
     border-radius: 99px;
     background-color: #1db954;
