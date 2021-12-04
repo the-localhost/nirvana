@@ -10,7 +10,7 @@
                 alt="Logo" 
              />
              {/* Spotify Login Button*/}
-             <button>Login</button>
+             <a>Login with Spotify</a>
          </div>
      )
  }
