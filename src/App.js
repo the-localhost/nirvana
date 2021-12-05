@@ -14,9 +14,14 @@ function App() {
     const hashObj = getHashObjFromUrl();
     window.location.hash = "";    // to hide token details from user
     const access_token = hashObj.access_token;
+
     if(access_token){
       setToken(access_token);
       spotify.setAccessToken(access_token);
+
+      spotify.getMe().then(user=> {
+        console.log(' This is me! \n', user);
+      })
     }
   },[]);
 
