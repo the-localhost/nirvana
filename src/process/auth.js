@@ -17,7 +17,7 @@ const scopes = [
 ];
 
 // generating response object from URL hash
-const getResponseObjFromUrl = () => {
+const getHashObjFromUrl = () => {
     return window.location.hash.substring(1).split('&').reduce((initial, item) => {
         let parts = item.split('=');
         initial[parts[0]] = decodeURIComponent(parts[1]);
@@ -33,4 +33,4 @@ const loginUrl = `${authEndPoint}?
                             response_type=token&
                             show_dialog=true`;
 
-export {getResponseObjFromUrl, loginUrl};
+export {getHashObjFromUrl, loginUrl};
