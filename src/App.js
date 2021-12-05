@@ -18,7 +18,11 @@ function App() {
 
   return (
     <div className="app">
-      <Login />
+      {
+        token
+          ?<h1>I'm logged in</h1>
+          :<Login />
+      }
     </div>
   ); 
 }
