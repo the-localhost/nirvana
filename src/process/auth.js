@@ -26,11 +26,6 @@ const getHashObjFromUrl = () => {
 };
 
 // login URL - the URL that we access on or end
-const loginUrl = `${authEndPoint}?
-                            client_id=${clientID}&
-                            redirect_uri=${redirectUri}&
-                            scope=${scopes.join("%20")}&
-                            response_type=token&
-                            show_dialog=true`;
+const loginUrl = `${authEndPoint}?client_id=${clientID}&redirect_uri=${redirectUri}&scope=${scopes.join("%20")}&response_type=token&show_dialog=true`;
 
 export {getHashObjFromUrl, loginUrl};
