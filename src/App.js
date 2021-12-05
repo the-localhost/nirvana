@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
 import Login from './components/Login/Login';
+import Player from './components/Player/Player';
 import { getHashObjFromUrl } from './process/auth';
 import SpotifyWebApi from 'spotify-web-api-js';
 
@@ -29,7 +30,7 @@ function App() {
     <div className="app">
       {
         token
-          ?<h1>I'm logged in</h1>
+          ?<Player />
           :<Login />
       }
     </div>
