@@ -9,10 +9,8 @@ import { useStateContextValue } from './components/StateProvider';
 const spotify = new SpotifyWebApi();
 
 function App() {
-  const [token, setToken] = useState(null); 
-
   // type of StateContext value === return type of useReducer()
-  const [{ user }, dispatch] = useStateContextValue();
+  const [{ token }, dispatch] = useStateContextValue();
 
   // code to run below code whenever App component is rendered
   useEffect(()=> {
@@ -21,7 +19,6 @@ function App() {
     const access_token = hashObj.access_token;
 
     if(access_token){
-      setToken(access_token);
       dispatch({
         type: 'SET_TOKEN',
         token: access_token
@@ -36,7 +33,8 @@ function App() {
       })
     }
   },[]);
-
+    console.log('MY TOKEN\n', token);
+    
   return (
     <div className="app">
       {
