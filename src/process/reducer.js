@@ -1,4 +1,5 @@
 const initialState = {
+    token: null,
     user: null,
     item: null,
     playing: false,
@@ -11,6 +12,11 @@ const reducer = (state=initialState, action) => {
             return {
                 ...state,
                 user: action.user
+            }
+        case 'SET_TOKEN':
+            return {
+                ...state,
+                token: action.token
             }
         default:
             return state;
