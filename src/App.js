@@ -12,7 +12,7 @@ function App() {
   const [token, setToken] = useState(null); 
 
   // type of StateContext value === return type of useReducer()
-  const [{}, dispatch] = useStateContextValue();
+  const [{ user }, dispatch] = useStateContextValue();
 
   // code to run below code whenever App component is rendered
   useEffect(()=> {
@@ -22,10 +22,17 @@ function App() {
 
     if(access_token){
       setToken(access_token);
+      dispatch({
+        type: 'SET_TOKEN',
+        token: access_token
+      })
       spotify.setAccessToken(access_token);
 
       spotify.getMe().then(user=> {
-        console.log(' This is me! \n', user);
+        dispatch({
+          type: 'SET_USER',
+          user
+        });
       })
     }
   },[]);
