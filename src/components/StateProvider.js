@@ -1,7 +1,9 @@
 import React, {createContext, useContext, useReducer} from 'react';
 
-export const StateContext = createContext();
+const StateContext = createContext();
 
+// this is the datalayer to provide state to all components
+// along with the ability to make changes
 function StateProvider({initialState, reducer, children}) {
     return (
         <StateContext.Provider value={useReducer(reducer, initialState)}>
@@ -11,3 +13,4 @@ function StateProvider({initialState, reducer, children}) {
 }
 
 export default StateProvider;
+export {StateContext};
