@@ -1,5 +1,7 @@
 import React from 'react'
 
+// This is the component which will be rendered 
+// when login is successful
 function Player() {
     return (
         <div>
