@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import './App.css';
 import Login from './components/Login/Login';
 import Player from './components/Player/Player';
@@ -33,13 +33,12 @@ function App() {
       })
     }
   },[]);
-    console.log('MY TOKEN\n', token);
-    
+
   return (
     <div className="app">
       {
         token
-          ?<Player />
+          ?<Player spotify={spotify} />
           :<Login />
       }
     </div>
