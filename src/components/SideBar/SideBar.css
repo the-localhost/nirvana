@@ -9,3 +9,8 @@
     color: white;
     background-color: #040404;
 }
+
+.sidebar_logo {
+    object-fit: contain;
+    height: 70px;
+}
