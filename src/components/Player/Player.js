@@ -1,11 +1,16 @@
 import React from 'react'
+import './Player.css'
 
 // This is the component which will be rendered 
 // when login is successful
-function Player() {
+function Player({spotify}) {
     return (
-        <div>
-            <h1>You're logged in successfully!</h1>
+        <div className="Player">
+            <div className="Player_body">
+                {/* SideBar */}
+                {/* Body */}
+            </div>
+            {/* Footer */}
         </div>
     )
 }
