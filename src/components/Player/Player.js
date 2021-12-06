@@ -8,8 +8,8 @@ import './Player.css'
 // when login is successful
 function Player({spotify}) {
     return (
-        <div className="Player">
-            <div className="Player_body">
+        <div className="player">
+            <div className="player_body">
                 {/* SideBar */}
                 <SideBar />
                 {/* Body */}
