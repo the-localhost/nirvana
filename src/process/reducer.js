@@ -1,5 +1,5 @@
 const initialState = {
-    token: null,
+    token: 'BQCLcQvfonCvr8PvumtBa2pXKsC0QKd25rINIiziV2Tzc4KvUUD1pItpyd1N88AGrbUgJ4qq02yak_wjCpBapcZeA8Y',
     user: null,
     item: null,
     playing: false,
