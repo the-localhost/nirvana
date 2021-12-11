@@ -25,14 +25,14 @@ function App() {
       })
       spotify.setAccessToken(access_token);
 
-      spotify.getMe().then(user=> {
+      spotify.getMe().then((user)=> {
         dispatch({
           type: 'SET_USER',
           user
         });
       })
 
-      spotify.getUserPlaylists().then(playlists => {
+      spotify.getUserPlaylists().then((playlists)  => {
         dispatch(
           {
             type: 'SET_PLAYLISTS',
