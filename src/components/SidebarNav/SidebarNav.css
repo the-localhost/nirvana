@@ -11,6 +11,12 @@
     color: white;
 }
 
+.sidebar > hr {
+    border: 1px solid #282828;
+    width: 90%;
+    margin: 10px auto;
+}
+
 .sidebarNav__icon {
     padding: 0 10px;
 }
