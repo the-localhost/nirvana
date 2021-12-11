@@ -6,7 +6,7 @@ import './SidebarNav.css'
 function SidebarNav({Icon, title}) {
     return (
         <div className="sidebarNav">
-            <p>{title}</p>
+            {Icon?<h4>{title}</h4>:<p>{title}</p>}
         </div>
     )
 }
