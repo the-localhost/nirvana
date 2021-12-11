@@ -9,7 +9,7 @@ import './Player.css'
 function Player({spotify}) {
     return (
         <div className="player">
-            <div className="player_body">
+            <div className="player__body">
                 {/* SideBar */}
                 <SideBar />
                 {/* Body */}
