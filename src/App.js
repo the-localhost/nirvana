@@ -32,7 +32,7 @@ function App() {
         });
       })
     }
-  },[]);
+  },[dispatch]);
 
   return (
     <div className="app">
