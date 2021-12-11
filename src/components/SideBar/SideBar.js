@@ -10,13 +10,16 @@ import LibraryMusicIcon from '@mui/icons-material/LibraryMusic';
 function SideBar() {
     return (
         <div className="sidebar">
-            <img className="sidebar_logo"
+            <img className="sidebar__logo"
                 src="https://getheavy.com/wp-content/uploads/2019/12/spotify2019-830x350.jpg" 
                 alt="Spotify" 
             />
             <SidebarNav Icon={HomeIcon} title="Home"/>
             <SidebarNav Icon={SearchIcon} title="Search"/>
             <SidebarNav Icon={LibraryMusicIcon} title="Your Library"/>
+            <br />
+            <strong className="sidebar__title">PLAYLISTS</strong>
+            <hr />
         </div>
     )
 }
