@@ -1,4 +1,6 @@
 .sidebarNav {
+    display: flex;
+    align-items: center;
     color: grey;
     height: 40px;
     cursor: pointer;
@@ -8,3 +10,4 @@
 .sidebarNav:hover {
     color: white;
 }
+
