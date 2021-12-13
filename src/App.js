@@ -40,6 +40,15 @@ function App() {
           }
         );
       })
+
+      spotify.getPlaylist('37i9dQZEVXcRMBsMBvIrZD').then((playlist)=> {
+        dispatch(
+          {
+            type: 'SET_DISCOVER_WEEKLY',
+            playlist
+          }
+        )
+      })
     }
   },[dispatch]);
 
