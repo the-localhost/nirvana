@@ -2,10 +2,13 @@ import React from 'react';
 import './Header.css';
 import SearchIcon from '@mui/icons-material/Search';
 import { Avatar } from '@mui/material';
+import { useStateContextValue } from '../StateProvider';
 
 function Header() {
+    const [{user}, dispatch] = useStateContextValue();
+
     return (
-        <div>
+        <div className="header">
             <div className="header__left">
                 <SearchIcon />
                 <input 
@@ -14,8 +17,8 @@ function Header() {
                 />
             </div>
             <div className="header__right">
-                <Avatar src="" alt="avatar" />
-                <h4>My Avatar</h4>
+                <Avatar src={user?.images[0]?.url} alt={user?.display_name} />
+                <h4>{user?.display_name}</h4>
             </div>
         </div>
     )
