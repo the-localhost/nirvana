@@ -8,6 +8,9 @@ function SidebarNav({Icon, title}) {
     return (
         <div className="sidebarNav">
             {Icon && <Icon className="sidebarNav__icon" />}
+
+            {/* If icon is present, it's an upper navigation
+                else it's a playlist navigation */}
             {Icon?<h4>{title}</h4>:<p>{title}</p>}
         </div>
     )

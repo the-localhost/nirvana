@@ -2,10 +2,11 @@
  import './Login.css';
  import { loginUrl } from '../../process/auth';
  
+//  before the user has logged in
  function Login() {
      return (
          <div className="login ">
-             {/* Spotify Logo */}
+             {/* Spotify (Nirvana) Logo */}
              <img 
                 src="https://getheavy.com/wp-content/uploads/2019/12/spotify2019-830x350.jpg" 
                 alt="Logo" 
