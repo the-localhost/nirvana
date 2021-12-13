@@ -5,10 +5,17 @@
 }
 
 .header__left {
+    flex: 0.5;
     background-color: white;
     color: grey;
     border-radius: 30px;
     display: flex;
     align-items: center;
     padding: 10px;
+}
+
+.header__left > input {
+    border: none;
+    width: 100%;
+    outline: none;
 }
