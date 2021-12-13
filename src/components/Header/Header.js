@@ -1,6 +1,7 @@
 import React from 'react';
 import './Header.css';
 import SearchIcon from '@mui/icons-material/Search';
+import { Avatar } from '@mui/material';
 
 function Header() {
     return (
@@ -13,7 +14,8 @@ function Header() {
                 />
             </div>
             <div className="header__right">
-
+                <Avatar src="" alt="avatar" />
+                <h4>My Avatar</h4>
             </div>
         </div>
     )
