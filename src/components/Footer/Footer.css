@@ -46,6 +46,10 @@
     color: #1ed15e;
 }
 
+.footer__right * .MuiSlider-root {
+    color: green;
+}
+
 .footer__icon:hover,
 .footer__green:hover {
   transition: transform 0.2s ease-in-out;
