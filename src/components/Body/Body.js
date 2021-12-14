@@ -29,9 +29,9 @@ function Body() {
                     <MoreHorizIcon />
                 </div>
                 {/* List of Songs */}
-                {discover_weekly?.tracks.items.map(item=> {
-                    <SongTile track={item.track} />
-                })}
+                {discover_weekly?.tracks.items.map((item, id)=> 
+                    <SongTile key={id} track={item.track} />
+                )}
             </div>
         </div>
     )
