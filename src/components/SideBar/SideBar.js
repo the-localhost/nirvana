@@ -12,10 +12,10 @@ function SideBar() {
     const [{playlists}, dispatch] = useStateContextValue();
     return (
         <div className="sidebar">
-            {/* Spotify (Nirvana) Logo at Top */}
+            {/* Nirvana Logo at Top */}
             <img className="sidebar__logo"
-                src="https://getheavy.com/wp-content/uploads/2019/12/spotify2019-830x350.jpg" 
-                alt="Spotify" 
+                src="https://i.imgur.com/21vBfhg.jpeg" 
+                alt="Nirvana" 
             />
             {/* Upper navigation (Home, Search, Library) */}
             <SidebarNav Icon={HomeIcon} title="Home"/>
