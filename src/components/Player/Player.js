@@ -6,7 +6,7 @@ import './Player.css'
 
 // This is the component which will be rendered 
 // when login is successful
-function Player({spotify}) {
+function Player() {
     return (
         <div className="player">
             <div className="player__body">
