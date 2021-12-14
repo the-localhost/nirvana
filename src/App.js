@@ -50,7 +50,7 @@ function App() {
         )
       })
     }
-  },[dispatch]);
+  },[token, dispatch]);
 
   return (
     <div className="app">
