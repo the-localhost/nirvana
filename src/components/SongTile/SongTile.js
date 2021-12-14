@@ -1,4 +1,5 @@
 import React from 'react'
+import './SongTile.css'
 
 function SongTile( {track} ) {
     return (
