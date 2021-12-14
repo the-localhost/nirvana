@@ -5,6 +5,7 @@ import './Body.css'
 import PlayCircleFilledIcon from '@mui/icons-material/PlayCircleFilled';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
+import SongTile from '../SongTile/SongTile';
 
 function Body() {
     const [{discover_weekly}, dispatch] = useStateContextValue();
@@ -21,12 +22,16 @@ function Body() {
                 </div>
             </div>
             <div className="body__songs">
+                {/* Icons */}
                 <div className="body__icons">
                     <PlayCircleFilledIcon className="body__shuffle" />
                     <FavoriteIcon fontSize="large" />
                     <MoreHorizIcon />
                 </div>
                 {/* List of Songs */}
+                {discover_weekly?.tracks.items.map(item=> {
+                    <SongTile track={item.track} />
+                })}
             </div>
         </div>
     )
