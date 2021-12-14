@@ -10,12 +10,14 @@ function SongTile( {track} ) {
                 alt="" 
             />
             {/*  */}
-            <div className="songTile__info"></div>
-
-            {/* Artists */}
-            <p>
-                {track.artists.map((artist)=> artist.name).join(", ")} {" "} - {" "} {track.album.name}
-            </p>
+            <div className="songTile__info">
+                {/* Song name */}
+                <h1>{track.name}</h1>
+                {/* Artists */}
+                <p>
+                    {track.artists.map((artist)=> artist.name).join(", ")} {" "} - {" "} {track.album.name}
+                </p>
+            </div>
         </div>
     )
 }
