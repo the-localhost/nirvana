@@ -17,13 +17,13 @@ function Footer() {
                 {/* Song Image */}
                 <img 
                     className="footer__albumLogo"
-                    src="https://yt3.ggpht.com/ytc/AKedOLSB2Y0kx4m8yrfqbUyQoJnr_hGSR1mDtBjVD66eLg=s900-c-k-c0x00ffffff-no-rj" 
+                    src="https://i.scdn.co/image/ab67616d00001e02f1ea3305aa003425dda05882" 
                     alt="" 
                 />
                 {/* Song & Artist */}
                 <div className="footer__songInfo">
                     <h4>Hello</h4>
-                    <p>Adelle</p>
+                    <p>Adele</p>
                 </div>
             </div>
             {/* Center Part */}
